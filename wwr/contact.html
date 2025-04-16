@@ -9,10 +9,10 @@
 </head>
 <body>
     <header>
-        <div class="header-grid">
-            <img src="images/white.png" alt="White Water Rafting Logo" class="logo">
+        <div class="header-content">
+            <img src="images/logo.png" alt="White Water Rafting Logo" class="logo">
             <nav>
-                <ul class="nav-flex">
+                <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="trips.html">Trips</a></li>
@@ -22,22 +22,23 @@
         </div>
     </header>
 
-    <main>
-        <div class="container">
+    <main class="contact-main">
+        <div class="contact-container">
             <h1>Contact Us</h1>
             
-            <section class="company-info">
+            <section class="contact-info">
                 <h2>Our Location</h2>
                 <div class="info-grid">
-                    <div>
+                    <div class="address-block">
                         <h3>Address</h3>
+                        <p>123 River Adventure Lane</p>
                         <p>Quito, Adventure City, AC 12345</p>
                         
                         <h3>Phone</h3>
-                        <p>(593) 959285619</p>
+                        <p>(593) 959-285-619</p>
                         
                         <h3>Email</h3>
-                        <p>electroascensores64@gmail.com</p>
+                        <p>info@whitewaterrafting.com</p>
                     </div>
                     <div class="map-container">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-122.12345678901234!3d45.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDA3JzI0LjQiTiAxMjLCsDA3JzI0LjQiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
@@ -45,27 +46,36 @@
                 </div>
             </section>
 
-            <section class="team">
+            <section class="team-section">
                 <h2>Meet Our Team</h2>
-                <div class="gallery">
-                    <figure>
-                        <img src="images/sarah.png" alt="Team Member">
-                        <figcaption>Sarah Johnson<br>Adventure Guide</figcaption>
+                <div class="team-grid">
+                    <figure class="team-member">
+                        <img src="images/sarah.png" alt="Sarah Johnson - Adventure Guide">
+                        <figcaption>
+                            <h3>Sarah Johnson</h3>
+                            <p>Adventure Guide</p>
+                        </figcaption>
                     </figure>
-                    <figure>
-                        <img src="images/mike.png" alt="Team Member">
-                        <figcaption>Mike Rodriguez<br>Safety Instructor</figcaption>
+                    <figure class="team-member">
+                        <img src="images/mike.png" alt="Mike Rodriguez - Safety Instructor">
+                        <figcaption>
+                            <h3>Mike Rodriguez</h3>
+                            <p>Safety Instructor</p>
+                        </figcaption>
                     </figure>
-                    <figure>
-                        <img src="images/emily.png" alt="Team Member">
-                        <figcaption>Emily Chen<br>Customer Relations</figcaption>
+                    <figure class="team-member">
+                        <img src="images/emily.png" alt="Emily Chen - Customer Relations">
+                        <figcaption>
+                            <h3>Emily Chen</h3>
+                            <p>Customer Relations</p>
+                        </figcaption>
                     </figure>
                 </div>
             </section>
 
             <section class="contact-form">
                 <h2>Send Us a Message</h2>
-                <form action="#" method="post">
+                <form action="#" method="post" class="message-form">
                     <div class="form-group">
                         <label for="name">Your Name:</label>
                         <input type="text" id="name" name="name" required>
@@ -78,15 +88,19 @@
                     
                     <div class="form-group">
                         <label>Purpose of Message:</label>
-                        <div class="radio-group">
-                            <input type="radio" id="general" name="purpose" value="general" checked>
-                            <label for="general">General Inquiry</label>
-                            
-                            <input type="radio" id="reservation" name="purpose" value="reservation">
-                            <label for="reservation">Reservation Question</label>
-                            
-                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                            <label for="suggestion">Website Suggestion</label>
+                        <div class="radio-options">
+                            <div class="radio-option">
+                                <input type="radio" id="general" name="purpose" value="general" checked>
+                                <label for="general">General Inquiry</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="reservation" name="purpose" value="reservation">
+                                <label for="reservation">Reservation Question</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                                <label for="suggestion">Website Suggestion</label>
+                            </div>
                         </div>
                     </div>
                     
@@ -95,21 +109,21 @@
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     
-                    <div class="form-group">
+                    <div class="form-group checkbox-group">
                         <input type="checkbox" id="newsletter" name="newsletter">
                         <label for="newsletter">Subscribe me to the monthly newsletter</label>
                     </div>
                     
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </section>
         </div>
     </main>
 
-    <footer>
+    <footer class="contact-footer">
         <div class="footer-content">
             <p>&copy; 2025 White Water Rafting | All Rights Reserved</p>
-            <div class="social-icons">
+            <div class="social-links">
                 <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
                 <a href="#"><img src="images/twiter.png" alt="Twitter"></a>
                 <a href="#"><img src="images/instagram.jfif" alt="Instagram"></a>
